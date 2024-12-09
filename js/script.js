@@ -58,7 +58,7 @@ const teamData = [
         name: "Shahid Dar",
         position: "Full Stack Developer at Machadalo",
         education: "Master's from Sharda University",
-        image: "/assets/img/Shahid (1).jpeg",
+        image: "https://media.licdn.com/dms/image/v2/D5603AQGz3fufh7E7GQ/profile-displayphoto-shrink_800_800/B56ZOb5_NZGgAc-/0/1733487491152?e=1739404800&v=beta&t=MMFsmccxk8BheFWZjE4dmfIkL7rEvG4TOfSu0YJALb8",
         twitter: "https://www.twitter.com",
         facebook: "https://www.facebook.com",
         linkedin: "https://www.linkedin.com/in/shahid-dar-b3aaa4159/",

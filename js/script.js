@@ -58,7 +58,7 @@ const teamData = [
         name: "Shahid Dar",
         position: "Full Stack Developer at Machadalo",
         education: "Master's from Sharda University",
-        image: "/assets/img/Shahid (1).jpeg",
+        image: "/assets/img/Shahid.jpeg",
         twitter: "https://www.twitter.com",
         facebook: "https://www.facebook.com",
         linkedin: "https://www.linkedin.com/in/shahid-dar-b3aaa4159/",

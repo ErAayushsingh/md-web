@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Service Details - Machadalo Bootstrap Template</title>
+  <title>Macahadalo - Home</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/machadalo-logo.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -26,11 +26,34 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-
+  <style>
+    .client-logo-wrapper {
+      overflow: hidden;
+      width: 100%;
+      max-width: 250px;
+      max-height: 250px;
+      margin: 0 auto;
+      position: relative;
+      border-radius: 10px;
+      /* transition: transform 0.3s ease, filter 0.3s ease; */
+    }
+  
+    .client-logo-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      /* transition: transform 0.3s ease, filter 0.3s ease; */
+      /* filter: grayscale(100%); */
+    }
+  
+    .client-logo-wrapper:hover img {
+      transform: scale(1.5);
+      /* filter: grayscale(0);  */
+    }
+  </style>
 </head>
 
-<body class="service-details-page">
+<body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -130,90 +153,38 @@
             </ul>
           </li>
           <li><a href="Service.html">Our Services</a></li>
+          <li class="dropdown"><a href=""><span>Blog</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Post.html">Post</a></li>
+              <li><a href="News.html">News</a></li>
+            </ul>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
     </div>
   </header>
-
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Service Details</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Service Details</li>
-          </ol>
-        </nav>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="hero-bg">
+        <img src="assets/img/hero-bg-light.webp" alt="">
       </div>
-    </div><!-- End Page Title -->
-
-    <!-- Service Details Section -->
-    <section id="service-details" class="service-details section">
-
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="service-box">
-              <h4>Serices List</h4>
-              <div class="services-list">
-                <a href="#" class="active"><i class="bi bi-arrow-right-circle"></i><span>Web Design</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Web Design</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Product Management</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Graphic Design</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Marketing</span></a>
-              </div>
-            </div><!-- End Services List -->
-
-            <div class="service-box">
-              <h4>Download Catalog</h4>
-              <div class="download-catalog">
-                <a href="#"><i class="bi bi-filetype-pdf"></i><span>Catalog PDF</span></a>
-                <a href="#"><i class="bi bi-file-earmark-word"></i><span>Catalog DOC</span></a>
-              </div>
-            </div><!-- End Services List -->
-
-            <div class="help-box d-flex flex-column justify-content-center align-items-center">
-              <i class="bi bi-headset help-icon"></i>
-              <h4>Have a Question?</h4>
-              <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+1 5589 55488 55</span></p>
-              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:contact@example.com">contact@example.com</a></p>
-            </div>
-
+      <div class="container text-center">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <h1 data-aos="fade-up">Welcome to <span>Machadalo</span></h1>
+          <p data-aos="fade-up" data-aos-delay="100">Quickly start your business  with us and set the stage for success<br></p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#about" class="btn-get-started">Get Started</a>
+            <a href="" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>
-
-          <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-            <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
-            <p>
-              Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
-            </ul>
-            <p>
-              Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste veniam repellat odit. Aut pariatur itaque nesciunt fuga.
-            </p>
-            <p>
-              Sunt rem odit accusantium omnis perspiciatis officia. Laboriosam aut consequuntur recusandae mollitia doloremque est architecto cupiditate ullam. Quia est ut occaecati fuga. Distinctio ex repellendus eveniet velit sint quia sapiente cumque. Et ipsa perferendis ut nihil. Laboriosam vel voluptates tenetur nostrum. Eaque iusto cupiditate et totam et quia dolorum in. Sunt molestiae ipsum at consequatur vero. Architecto ut pariatur autem ad non cumque nesciunt qui maxime. Sunt eum quia impedit dolore alias explicabo ea.
-            </p>
-          </div>
-
+          <img src="assets/img/hero-services-img.webp" class="img-fluid hero-img" alt="" data-aos="zoom-out" data-aos-delay="300">
         </div>
-
       </div>
 
-    </section><!-- /Service Details Section -->
-
-  </main>
+    </section>
+   </main>
 
   <footer id="footer" class="container footer position-relative light-background">
     <div class="container footer-top">

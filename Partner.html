@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -92,39 +93,34 @@
         }
 
         .partners-list {
-            padding: 60px 15px;
-            background-color: #e9ecef;
-        }
+        padding: 60px 15px;
+        background-color: #e9ecef;
+    }
 
-        .partners-list {
-    padding: 60px 15px;
-    background-color: #e9ecef;
-}
+    .partner-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        background-color: #f8f9fa;
+        padding: 10px;
+    }
 
-.partner-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: contain; /* Ensures the full image fits within the container */
-    background-color: #f8f9fa; /* Adds background to make sure empty spaces look clean */
-    padding: 10px; /* Adds spacing inside the container for better visibility */
-}
+    .partner-card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
 
-.partner-card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.partner-card h5, .partner-card p {
-    text-align: center;
-    margin: 10px 0;
-}
+    .partner-card h5, .partner-card p {
+        text-align: center;
+        margin: 10px 0;
+    }
 
   </style>
 </head>
@@ -225,19 +221,17 @@
             <ul>
               <li><a href="About.html">About Us</a></li>
               <li><a href="Md-team.html">Our Team</a></li>
-              <li><a href="Partner
-                
-                .html">Our Partners</a></li>
+              <li><a href="Partner.html">Our Partners</a></li>
               <li><a href="Contact.html">Contact Us</a></li>
             </ul>
           </li>
           <li><a href="Service.html">Our Services</a></li>
-          <li class="dropdown"><a href=""><span>Blog</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <!-- <li class="dropdown"><a href=""><span>Blog</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="Post.html">Post</a></li>
               <li><a href="News.html">News</a></li>
             </ul>
-          </li>
+          </li> -->
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -247,7 +241,7 @@
   <main class="main">
     <section id="contact" class="contact section">
         <div class="responsive-container-block container">
-            <p class="text-blk team-head-text">Our Team</p>
+            <!-- <p class="text-blk team-head-text">Our Team</p> -->
         </div>
     </section>
 
@@ -278,41 +272,67 @@
             </div>
         </div>
     </section>
-
+    <section id="clients" class="clients section">
+      <div class="" style="background-color: #f8f9fa; padding: 50px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <div class="section-title text-center" data-aos="fade-up">
+            <h2>Our Partner</h2>
+        </div>
+        <div class="row mt-2 align-items-center">
+            <div class="col-md-6 text-center">
+                <img src="assets/img/clients/stxmachadalo.jpg" alt="Machadalo X SynergyTop" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px;">
+            </div>
+            <div class="col-md-6">
+                <h2 class="fw-bold text-primary">Machadalo X SynergyTop</h2>
+                <p class="text-muted" style="line-height: 1.8;">
+                  We are excited to announce SynergyTop as our strategic and sales partner in expanding the reach and impact of our WhatsApp-based Key Stakeholders Collaborative Ecosystem (KSCE). In this collaboration, Machadalo, a product company backed by IIT Bombay and IIM Mumbai alumni, brings its deep sector expertise and innovative, low-code business solutions, while SynergyTop, as our implementation partner, ensures seamless execution and scalability.
+                  KSCE is a 360-degree collaborative communication strategy designed to drive engagement and efficiency across industries. With workflow-based automation, AI-driven chat solutions, and deep analytical insights, we are transforming how residential societies and businesses connect, communicate, and grow.
+                </p>
+            </div>
+        </div>
+    </div>
+    </section>
     <!-- Partners List Section -->
     <section class="partners-list">
-        <div class="section-title text-center">Our Trusted Partners</div>
-        <div class="row g-4">
-            <div class="col-md-3">
-                <div class="partner-card">
-                    <img src="assets/img/synergytop-logo.webp" alt="Partner 1" class="img-fluid rounded mb-3">
-                    <h5>Our strategic and sales partner</h5>
-                    <p>Leading Implementation Solutions in Tech</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="partner-card">
-                    <img src="assets/img/Trustsignal.png" alt="Partner 2" class="img-fluid rounded mb-3">
-                    <h5>Sms servicing & Whatsapp messaging Partner</h5>
-                    <p>Innovative Business Solutions</p>
-                </div>
-            </div>
-            <!-- <div class="col-md-3">
-                <div class="partner-card">
-                    <img src="https://via.placeholder.com/150" alt="Partner 3" class="img-fluid rounded mb-3">
-                    <h5>Partner 3</h5>
-                    <p>Global Tech Network</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="partner-card">
-                    <img src="https://via.placeholder.com/150" alt="Partner 4" class="img-fluid rounded mb-3">
-                    <h5>Partner 4</h5>
-                    <p>Next-Gen Innovations</p>
-                </div>
-            </div>
-        </div> -->
-    </section>
+      <div class="section-title text-center">Our Trusted Partners</div>
+      <div id="partnersCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="row g-4 justify-content-evenly">
+                      <div class="col-md-3">
+                          <div class="partner-card">
+                              <img src="assets/img/synergytop-logo.webp" alt="Partner 1" class="img-fluid rounded mb-3">
+                              <h5>Our strategic and sales partner</h5>
+                              <p>Leading Implementation Solution Partner</p>
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="partner-card">
+                              <img src="assets/img/Trustsignal.png" alt="Partner 2" class="img-fluid rounded mb-3">
+                              <h5>Sms servicing & Whatsapp messaging Partner</h5>
+                              <p>Messaging Solution Partner</p>
+                          </div>
+                      </div>
+                      <!-- <div class="col-md-4">
+                          <div class="partner-card">
+                              <img src="assets/img/St-creative.png" alt="Partner 3" class="img-fluid rounded mb-3">
+                              <h5>Creative Marketing Partner</h5>
+                              <p>Innovative Business Solutions</p>
+                          </div>
+                      </div> -->
+                  </div>
+              </div>
+              <!-- Additional slides can be added as needed -->
+          </div>
+          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#partnersCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#partnersCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button> -->
+      </div>
+  </section>
 
     <!-- Contact Form Section -->
     <section id="partner-form" class="form-section">
@@ -427,6 +447,7 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
